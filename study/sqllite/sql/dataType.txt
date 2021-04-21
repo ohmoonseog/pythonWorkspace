@@ -1,0 +1,23 @@
+파이썬 형  -->  SQLite 형
+---------     -----------
+None           NULL
+int            INTEGER
+float          REAL
+str            TEXT
+bytes          BLOB
+
+SQLite 형  -->  파이썬 형
+---------     -----------
+NULL            None
+INTEGER         int
+REAL            float
+TEXT            text_factory에 따라 다릅니다, 기본적으로 str.
+BLOB            bytes
+
+데이터         타입설명
+---------     -----------
+NULL          NULL 값
+INTEGER       부호있는 정수. 1, 2, 3, 4, 6, or 8 바이트로 저장
+REAL          부동 소수점 숫자. 8 바이트로 저장
+TEXT          텍스트. UTF-8, UTF-16BE or UTF-16-LE 중 하나에 저장
+BLOB          Binary Large OBject. 입력 데이터를 그대로 저장
